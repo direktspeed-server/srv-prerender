@@ -1,12 +1,15 @@
-# DIREKTSPEED Server - Module PreRender
+# DIREKTSPEED Server - PreRender
 
 This is Forked from harp most and then got improved
+- can be used as Supplyer of Middelware for Routing Request to the dssrv/prerender layout partial paradigm
+- can be used as StandAlone Server via cli interface offered by binary "prerender"
+- get used normal as a Option for DIREKTSPEED Server and is serving projects with the prerender option
 
 
 > zero-configuration web server with built in pre-processing
 > can be used with DIREKTSPEED Server as Module
 
-### What is DIREKTSPEED Server - Module PreRender?
+### What is DIREKTSPEED Server -PreRender?
 
 DIREKTSPEED Server is a static web server that also serves doT Jade, Markdown, EJS, Less, Stylus, Sass, and CoffeeScript **as** HTML, CSS, and JavaScript without any configuration. It supports the beloved layout/partial paradigm and it has flexible metadata and global objects for traversing the file system and injecting custom data into templates. Optionally, DIREKTSPEED Server - Module PreRender can also compile your project down to static assets for hosting behind any valid HTTP server.
 
