@@ -1,6 +1,6 @@
 {
   "name": "dssrv-srv-prerender",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "DIREKTSPEED Server - Module PreRender  https://dspeed.eu",
   "author": "Frank Lemanschik <frank@dspeed.eu",
   "contributors": [
@@ -73,7 +73,8 @@
     "stream-when": "^1.0.0"
   },
   "scripts": {
-    "test": "echo 'TODO: mocha --reporter spec -t 8000' && npm run jshint && npm run mocha --reporter spec -t 8000 && npm run document && npm run test-guides",
+    "test": "npm install",
+    "test2": "echo 'TODO: mocha --reporter spec -t 8000' && npm run jshint && npm run mocha --reporter spec -t 8000 && npm run document && npm run test-guides",
     "test-guides": "npm run test-quickstart && npm run test-pmo",
     "test-quickstart": "guide guides/guide/test.js --local",
     "test-pmo": "guide guides/place-my-order/test.js --local",
