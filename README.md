@@ -1,3 +1,4 @@
+![build](https://travis-ci.org/dssrv/srv-prerender.svg?branch=master)
 # DIREKTSPEED Server - PreRender
 
 This is Forked from harp most and then got improved
