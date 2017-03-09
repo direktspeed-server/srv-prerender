@@ -54,9 +54,7 @@
     "doc": "docs"
   },
   "devDependencies": {
-    "cheerio": "^0.22.0",
     "coveralls-send": "0.0.2",
-    "documentjs": "^0.4.3",
     "dotdotdot": "^1.7.0",
     "dssrv-cli": "^1.0.5",
     "es6-promise": "^4.0.5",
