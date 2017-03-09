@@ -33,7 +33,7 @@
     "url": "git+https://github.com/dssrv/srv-prerender"
   },
   "dependencies": {
-    "async": "^2.1.5",
+    "async": "2.1.4",
     "commander": "^2.9.0",
     "express": "^4.0.0",
     "download-github-repo": "^0.1.3",
