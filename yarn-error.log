@@ -15,7 +15,7 @@ Platform:
 
 npm manifest: 
   {
-    "name": "dssrv-srv-prerender",
+    "name": "steal-srv-prerender",
     "version": "1.0.5",
     "description": "DIREKTSPEED Server - Module PreRender  https://dspeed.eu",
     "author": "Frank Lemanschik <frank@dspeed.eu",
@@ -42,25 +42,25 @@ npm manifest:
       "ExpressJS"
     ],
     "homepage": "http://dspeed.eu",
-    "bugs": "https://github.com/dssrv/srv-prerender/issues",
+    "bugs": "https://github.com/steal-server/prerender/issues",
     "main": "./lib/index.js",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/dssrv/srv-prerender"
+      "url": "git+https://github.com/steal-server/prerender"
     },
     "peerDependencies": {
       "async": ">=2.0.1",
       "commander": ">=2.9.0",
       "express": ">=4.0.0",
       "download-github-repo": ">=0.1.3",
-      "dssrv-envy-json": ">=0.2.1",
+      "steal-envy-json": ">=0.2.1",
       "escape-html": ">=1.0.3",
       "fs-extra": ">=0.30.0",
       "mime": "1.3.4",
       "parseurl": ">=1.3.1",
       "pause": ">=0.1.0",
       "send": ">=0.14.1",
-      "dssrv-prerender": ">=1.1.2",
+      "steal-prerender": ">=1.1.2",
       "basic-auth": ">=1.0.0",
       "chalk": ">=1.1.3",
       "cross-spawn-async": ">=2.0.0",
@@ -74,7 +74,7 @@ npm manifest:
       "coveralls-send": "0.0.2",
       "documentjs": "^0.4.3",
       "dotdotdot": "^1.7.0",
-      "dssrv-cli": "^1.0.5",
+      "steal-cli": "^1.0.5",
       "es6-promise": "^3.0.2",
       "guide-automation": "^0.3.0",
       "is-appveyor": "^1.0.0",
@@ -1576,9 +1576,9 @@ Lockfile:
       vinyl-fs "^2.2.0"
       ware "^1.2.0"
   
-  dssrv-cli@^1.0.5:
+  steal-cli@^1.0.5:
     version "1.5.0"
-    resolved "https://registry.yarnpkg.com/dssrv-cli/-/dssrv-cli-1.5.0.tgz#7d71c42a0b0fc7c10b191e1f7994fa2a3e4071fe"
+    resolved "https://registry.yarnpkg.com/steal-cli/-/steal-cli-1.5.0.tgz#7d71c42a0b0fc7c10b191e1f7994fa2a3e4071fe"
     dependencies:
       commander "^2.9.0"
       cross-spawn "^4.0.0"
@@ -1589,13 +1589,13 @@ Lockfile:
       yeoman-environment "^1.2.7"
       yeoman-generator "^0.22.3"
   
-  dssrv-envy-json@0.2.1:
+  steal-envy-json@0.2.1:
     version "0.2.1"
-    resolved "https://registry.yarnpkg.com/dssrv-envy-json/-/dssrv-envy-json-0.2.1.tgz#6aea745f27df35d01c61b47deef016c06fa497de"
+    resolved "https://registry.yarnpkg.com/steal-envy-json/-/steal-envy-json-0.2.1.tgz#6aea745f27df35d01c61b47deef016c06fa497de"
   
-  dssrv-prerender@^1.1.2:
+  steal-prerender@^1.1.2:
     version "1.1.4"
-    resolved "https://registry.yarnpkg.com/dssrv-prerender/-/dssrv-prerender-1.1.4.tgz#bbe0a08f6e31ec08e8cd3b0f380d634311a2b4e1"
+    resolved "https://registry.yarnpkg.com/steal-prerender/-/steal-prerender-1.1.4.tgz#bbe0a08f6e31ec08e8cd3b0f380d634311a2b4e1"
     dependencies:
       autoprefixer "^6.5.0"
       coffee-script "^1.11.0"
@@ -6664,4 +6664,4 @@ Lockfile:
       chalk "^1.0.0"
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/home/frank/workspace/DIREKTSPEED/src/dssrv-srv-prerender/node_modules/.yarn-integrity'
+  Error: EACCES: permission denied, unlink '/home/frank/workspace/DIREKTSPEED/src/steal-srv-prerender/node_modules/.yarn-integrity'

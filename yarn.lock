@@ -1240,9 +1240,9 @@ download@^4.1.2:
     vinyl-fs "^2.2.0"
     ware "^1.2.0"
 
-dssrv-cli@^1.0.5:
+steal-cli@^1.0.5:
   version "1.5.0"
-  resolved "https://registry.yarnpkg.com/dssrv-cli/-/dssrv-cli-1.5.0.tgz#7d71c42a0b0fc7c10b191e1f7994fa2a3e4071fe"
+  resolved "https://registry.yarnpkg.com/steal-cli/-/steal-cli-1.5.0.tgz#7d71c42a0b0fc7c10b191e1f7994fa2a3e4071fe"
   dependencies:
     commander "^2.9.0"
     cross-spawn "^4.0.0"

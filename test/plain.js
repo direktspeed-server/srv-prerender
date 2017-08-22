@@ -3,7 +3,7 @@ var request     = require('request')
 var path        = require("path")
 var fs          = require("fs")
 var exec        = require("child_process").exec
-var dssrv        = require("../")()
+var steal        = require("../")()
 
 describe("plain", function(){
   var output = path.join(__dirname, "out/plain")
@@ -15,14 +15,14 @@ describe("plain", function(){
     var config;
 
     before(function(done){
-      dssrv.compile(projectPath, outputPath, function(errors, output){
+      steal.compile(projectPath, outputPath, function(errors, output){
         config = output
-        dssrv.server(projectPath, { port: 8102 }, done)
+        steal.server(projectPath, { port: 8102 }, done)
       })
     })
 
     it("should have node version in config", function(done){
-      config.should.have.property("dssrv_version")
+      config.should.have.property("steal_version")
       done()
     })
 
@@ -70,14 +70,14 @@ describe("plain", function(){
     var config;
 
     before(function(done){
-      dssrv.compile(projectPath, outputPath, function(errors, output){
+      steal.compile(projectPath, outputPath, function(errors, output){
         config = output
-        dssrv.server(projectPath, { port: 8103 }, done)
+        steal.server(projectPath, { port: 8103 }, done)
       })
     })
 
     it("should have node version in config", function(done){
-      config.should.have.property("dssrv_version")
+      config.should.have.property("steal_version")
       done()
     })
 

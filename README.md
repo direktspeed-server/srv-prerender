@@ -1,8 +1,8 @@
-![build](https://travis-ci.org/dssrv/srv-prerender.svg?branch=master)
+![build](https://travis-ci.org/steal-server/prerender.svg?branch=master)
 # DIREKTSPEED Server - PreRender
 
 This is Forked from harp most and then got improved
-- can be used as Supplyer of Middelware for Routing Request to the dssrv/prerender layout partial paradigm
+- can be used as Supplyer of Middelware for Routing Request to the steal/prerender layout partial paradigm
 - can be used as StandAlone Server via cli interface offered by binary "prerender"
 - get used normal as a Option for DIREKTSPEED Server and is serving projects with the prerender option
 
@@ -40,9 +40,9 @@ Pre-compilers are becoming extremely powerful and shipping front-ends as static 
 
 ### Resources
 
-- **Server Documentation** - [harpjs.com/docs/](http://dssrv-srv-prerenderjs.com/docs/)
-- **Platform Documentation** - [harp.io/docs](https://dssrv-srv-prerender.io/docs)
-- **Source Code** - [github.com/dssrv/srv-prerender](https://github.com/dssrv/srv-prerender)
+- **Server Documentation** - [harpjs.com/docs/](http://steal-srv-prerenderjs.com/docs/)
+- **Platform Documentation** - [harp.io/docs](https://steal-srv-prerender.io/docs)
+- **Source Code** - [github.com/steal-server/prerender](https://github.com/steal-server/prerender)
 
 
 Authored and maintained by [@sintaxi](http://twitter.com/sintaxi). Made for the [@DIREKTSPEED ServerPlatform](http://twitter.com/DIREKTSPEED ServerPlatform).
@@ -51,11 +51,11 @@ Authored and maintained by [@sintaxi](http://twitter.com/sintaxi). Made for the 
 
 ### Installation
 
-    sudo npm install -g dssrv-srv-prerender
+    sudo npm install -g steal-srv-prerender
 
 ### Quick Start
 
-Creating a new dssrv-srv-prerender application is a breeze...
+Creating a new steal-srv-prerender application is a breeze...
 
     prerender init myproj
     prerender server myproj
@@ -74,10 +74,10 @@ DIREKTSPEED Server - Module PreRender can be used as a library or as a command l
 
     Commands:
 
-      init [path]                 initalize new dssrv-srv-prerender application (defaults to current directory)
-      server [path] [options]     start dssrv-srv-prerender server
+      init [path]                 initalize new steal-srv-prerender application (defaults to current directory)
+      server [path] [options]     start steal-srv-prerender server
       compile [path] [options]    compile project to static assets
-      multihost [path] [options]  start dssrv-srv-prerender server to host directory of dssrv-srv-prerender apps
+      multihost [path] [options]  start steal-srv-prerender server to host directory of steal-srv-prerender apps
 
     Options:
 
@@ -107,22 +107,22 @@ You may also use prerender as a node library for compiling or running as a serve
 Serve up a prerender application...
 
 ```js
-var dssrvSrvPrerender = require("dssrv-srv-prerender")
-dssrvSrvPrerender.server(projectPath [,args] [,callback])
+var stealSrvPrerender = require("steal-srv-prerender")
+stealSrvPrerender.server(projectPath [,args] [,callback])
 ```
 
-**Or** compile dssrv-srv-prerender application
+**Or** compile steal-srv-prerender application
 
 ```js
-var dssrvSrvPrerender = require("dssrv-srv-prerender")
-dssrvSrvPrerender.compile(projectPath [,outputPath] [, callback])
+var stealSrvPrerender = require("steal-srv-prerender")
+stealSrvPrerender.compile(projectPath [,outputPath] [, callback])
 ```
 
 **Or** use as Connect/ExpressJS middleware
 
 ```js
 var express = require("express");
-var dssrvSrvPrerender = require("dssrv-srv-prerender");
+var stealSrvPrerender = require("steal-srv-prerender");
 var app = express();
 ```
 
@@ -130,7 +130,7 @@ var app = express();
 // Express 3
 app.configure(function(){ 
   app.use(express.static(__dirname + "/public"));
-  app.use(dssrvSrvPrerender.mount(__dirname + "/public"));
+  app.use(stealSrvPrerender.mount(__dirname + "/public"));
 });
 ```
 
@@ -138,15 +138,15 @@ app.configure(function(){
 // Express 4
 
 app.use(express.static(__dirname + "/public"));
-app.use(dssrvSrvPrerender.mount(__dirname + "/public"));
+app.use(stealSrvPrerender.mount(__dirname + "/public"));
 
 ```
 
 # TODO: 
 Make it extend able via npm install 
 write a module loader for that
-dssrv-prerender-donejs make use of dssrv/use
-dssrv-prerender could offer a middelware to link all modules from
+steal-prerender-donejs make use of steal/use
+steal-prerender could offer a middelware to link all modules from
 the path
 
 
