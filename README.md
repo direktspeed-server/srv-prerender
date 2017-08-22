@@ -1,18 +1,18 @@
-![build](https://travis-ci.org/steal-server/prerender.svg?branch=master)
-# DIREKTSPEED Server - PreRender
+![build](https://travis-ci.org/steal-server/steal-steal-ssr.svg?branch=master)
+# steal-ssr
 
 This is Forked from harp most and then got improved
-- can be used as Supplyer of Middelware for Routing Request to the steal/prerender layout partial paradigm
-- can be used as StandAlone Server via cli interface offered by binary "prerender"
-- get used normal as a Option for DIREKTSPEED Server and is serving projects with the prerender option
+- can be used as Supplyer of Middelware for Routing Request to the steal/steal-steal-ssr layout partial paradigm
+- can be used as StandAlone Server via cli interface offered by binary "steal-ssr"
+- get used normal as a Option for steal-ssr and is serving projects with the steal-ssr option
 
 
 > zero-configuration web server with built in pre-processing
-> can be used with DIREKTSPEED Server as Module
+> can be used with steal-ssr as Module
 
-### What is DIREKTSPEED Server -PreRender?
+### What is steal-ssr?
 
-DIREKTSPEED Server is a static web server that also serves doT Jade, Markdown, EJS, Less, Stylus, Sass, and CoffeeScript **as** HTML, CSS, and JavaScript without any configuration. It supports the beloved layout/partial paradigm and it has flexible metadata and global objects for traversing the file system and injecting custom data into templates. Optionally, DIREKTSPEED Server - Module PreRender can also compile your project down to static assets for hosting behind any valid HTTP server.
+steal-ssr is a static web server that also serves doT Jade, Markdown, EJS, Less, Stylus, Sass, and CoffeeScript **as** HTML, CSS, and JavaScript without any configuration. It supports the beloved layout/partial paradigm and it has flexible metadata and global objects for traversing the file system and injecting custom data into templates. Optionally, steal-ssr - Module stealSSR can also compile your project down to static assets for hosting behind any valid HTTP server.
 
 ### Why?
 
@@ -34,50 +34,50 @@ Pre-compilers are becoming extremely powerful and shipping front-ends as static 
 
 |                 | Language Superset                                                 | Whitespace Sensitive
 | --------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------
-| **HTML**        | [EJS](http://embeddedjs.com/)                                     | [Jade](http://jade-lang.com/), [pug](http://pug-lang.com/), [Markdown](http://daringfireball.net/projects/markdown/), [doT](http://http://olado.github.io/doT/index.htm) 
+| **HTML**        | [EJS](http://embeddedjs.com/)                                     | [Jade](http://jade-lang.com/), [pug](http://pug-lang.com/), [Markdown](http://daringfireball.net/projects/markdown/), [doT](http://http://olado.github.io/doT/index.htm)
 | **CSS**         | [LESS](http://lesscss.org/), [Sass (SCSS)](http://sass-lang.com/) | [Stylus](http://learnboost.github.io/stylus/), [Sass](http://sass-lang.com/)
 | **JavaScript**  | (TBD)                                                             | [CoffeeScript](http://coffeescript.org/), [EJS](http://embeddedjs.com/)
 
 ### Resources
 
-- **Server Documentation** - [harpjs.com/docs/](http://steal-srv-prerenderjs.com/docs/)
-- **Platform Documentation** - [harp.io/docs](https://steal-srv-prerender.io/docs)
-- **Source Code** - [github.com/steal-server/prerender](https://github.com/steal-server/prerender)
+- **Server Documentation** - [harpjs.com/docs/](http://steal-ssrjs.com/docs/)
+- **Platform Documentation** - [harp.io/docs](https://steal-ssr.io/docs)
+- **Source Code** - [github.com/steal-server/steal-steal-ssr](https://github.com/steal-server/steal-steal-ssr)
 
 
-Authored and maintained by [@sintaxi](http://twitter.com/sintaxi). Made for the [@DIREKTSPEED ServerPlatform](http://twitter.com/DIREKTSPEED ServerPlatform).
+Authored and maintained by [@sintaxi](http://twitter.com/sintaxi). Made for the [@steal-ssrPlatform](http://twitter.com/steal-ssrPlatform).
 
 ---
 
 ### Installation
 
-    sudo npm install -g steal-srv-prerender
+    sudo npm install -g steal-ssr
 
 ### Quick Start
 
-Creating a new steal-srv-prerender application is a breeze...
+Creating a new steal-ssr application is a breeze...
 
-    prerender init myproj
-    prerender server myproj
+    steal-ssr init myproj
+    steal-ssr server myproj
 
-Your DIREKTSPEED Server application is now running at [http://localhost:9000]()
+Your steal-ssr application is now running at [http://localhost:9000]()
 
 ---
 
 ## Documentation
 
-DIREKTSPEED Server - Module PreRender can be used as a library or as a command line utility.
+steal-ssr - Module stealSSR can be used as a library or as a command line utility.
 
 ### CLI Usage
 
-    Usage: prerender [command] [options]
+    Usage: steal-ssr [command] [options]
 
     Commands:
 
-      init [path]                 initalize new steal-srv-prerender application (defaults to current directory)
-      server [path] [options]     start steal-srv-prerender server
+      init [path]                 initalize new steal-ssr application (defaults to current directory)
+      server [path] [options]     start steal-ssr server
       compile [path] [options]    compile project to static assets
-      multihost [path] [options]  start steal-srv-prerender server to host directory of steal-srv-prerender apps
+      multihost [path] [options]  start steal-ssr server to host directory of steal-ssr apps
 
     Options:
 
@@ -86,67 +86,67 @@ DIREKTSPEED Server - Module PreRender can be used as a library or as a command l
 
 Start the server in root of your application by running...
 
-    prerender server
+    steal-ssr server
 
 You may optionally supply a port to listen on...
 
-    prerender server --port 8002
+    steal-ssr server --port 8002
 
 Compile an application from the root of your application by running...
 
-    prerender compile
+    steal-ssr compile
 
 You may optionally pass in a path to where you want the compiled assets to go...
 
-    prerender compile --output /path/to/cordova/project/www
+    steal-ssr compile --output /path/to/cordova/project/www
 
 ### Lib Usage
 
-You may also use prerender as a node library for compiling or running as a server.
+You may also use steal-ssr as a node library for compiling or running as a server.
 
-Serve up a prerender application...
+Serve up a steal-ssr application...
 
 ```js
-var stealSrvPrerender = require("steal-srv-prerender")
-stealSrvPrerender.server(projectPath [,args] [,callback])
+var stealSSR = require("steal-ssr")
+stealSSR.server(projectPath [,args] [,callback])
 ```
 
-**Or** compile steal-srv-prerender application
+**Or** compile steal-ssr application
 
 ```js
-var stealSrvPrerender = require("steal-srv-prerender")
-stealSrvPrerender.compile(projectPath [,outputPath] [, callback])
+var stealSSR = require("steal-ssr")
+stealSSR.compile(projectPath [,outputPath] [, callback])
 ```
 
 **Or** use as Connect/ExpressJS middleware
 
 ```js
 var express = require("express");
-var stealSrvPrerender = require("steal-srv-prerender");
+var stealSSR = require("steal-ssr");
 var app = express();
 ```
 
-```js 
+```js
 // Express 3
-app.configure(function(){ 
+app.configure(function(){
   app.use(express.static(__dirname + "/public"));
-  app.use(stealSrvPrerender.mount(__dirname + "/public"));
+  app.use(stealSSR.mount(__dirname + "/public"));
 });
 ```
 
-```js 
+```js
 // Express 4
 
 app.use(express.static(__dirname + "/public"));
-app.use(stealSrvPrerender.mount(__dirname + "/public"));
+app.use(stealSSR.mount(__dirname + "/public"));
 
 ```
 
-# TODO: 
-Make it extend able via npm install 
+# TODO:
+Make it extend able via npm install
 write a module loader for that
-steal-prerender-donejs make use of steal/use
-steal-prerender could offer a middelware to link all modules from
+steal-steal-ssr-donejs make use of steal/use
+steal-steal-ssr could offer a middelware to link all modules from
 the path
 
 

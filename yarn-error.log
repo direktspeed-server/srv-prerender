@@ -15,9 +15,9 @@ Platform:
 
 npm manifest: 
   {
-    "name": "steal-srv-prerender",
+    "name": "steal-srv-ssr",
     "version": "1.0.5",
-    "description": "DIREKTSPEED Server - Module PreRender  https://dspeed.eu",
+    "description": "steal-ssr - Module stealSSR  https://dspeed.eu",
     "author": "Frank Lemanschik <frank@dspeed.eu",
     "contributors": [
       "Watch CONTRIBUTORS.md file",
@@ -42,11 +42,11 @@ npm manifest:
       "ExpressJS"
     ],
     "homepage": "http://dspeed.eu",
-    "bugs": "https://github.com/steal-server/prerender/issues",
+    "bugs": "https://github.com/steal-server/steal-ssr/issues",
     "main": "./lib/index.js",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/steal-server/prerender"
+      "url": "git+https://github.com/steal-server/steal-ssr"
     },
     "peerDependencies": {
       "async": ">=2.0.1",
@@ -60,7 +60,7 @@ npm manifest:
       "parseurl": ">=1.3.1",
       "pause": ">=0.1.0",
       "send": ">=0.14.1",
-      "steal-prerender": ">=1.1.2",
+      "steal-ssr": ">=1.1.2",
       "basic-auth": ">=1.0.0",
       "chalk": ">=1.1.3",
       "cross-spawn-async": ">=2.0.0",
@@ -112,7 +112,7 @@ npm manifest:
     "preferGlobal": true,
     "readmeFilename": "README.md",
     "bin": {
-      "prerender": "./bin/prerender"
+      "ssr": "./bin/steal-ssr"
     },
     "engines": {
       "node": ">=0.12"
@@ -1593,9 +1593,9 @@ Lockfile:
     version "0.2.1"
     resolved "https://registry.yarnpkg.com/steal-envy-json/-/steal-envy-json-0.2.1.tgz#6aea745f27df35d01c61b47deef016c06fa497de"
   
-  steal-prerender@^1.1.2:
+  steal-ssr@^1.1.2:
     version "1.1.4"
-    resolved "https://registry.yarnpkg.com/steal-prerender/-/steal-prerender-1.1.4.tgz#bbe0a08f6e31ec08e8cd3b0f380d634311a2b4e1"
+    resolved "https://registry.yarnpkg.com/steal-ssr/-/steal-ssr-1.1.4.tgz#bbe0a08f6e31ec08e8cd3b0f380d634311a2b4e1"
     dependencies:
       autoprefixer "^6.5.0"
       coffee-script "^1.11.0"
@@ -6664,4 +6664,4 @@ Lockfile:
       chalk "^1.0.0"
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/home/frank/workspace/DIREKTSPEED/src/steal-srv-prerender/node_modules/.yarn-integrity'
+  Error: EACCES: permission denied, unlink '/home/frank/workspace/DIREKTSPEED/src/steal-srv-ssr/node_modules/.yarn-integrity'
