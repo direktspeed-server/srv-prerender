@@ -68,7 +68,7 @@
     "node-fetch": "1.7.3",
     "request": "2.82.0",
     "rimraf": "2.6.2",
-    "should": "11.2.1",
+    "should": "12.0.0",
     "stream-when": "1.0.0"
   },
   "scripts": {
