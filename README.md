@@ -1,6 +1,12 @@
 ![build](https://travis-ci.org/steal-server/steal-steal-ssr.svg?branch=master)
-# steal-ssr
+# deprecated steal-ssr
+This was a iteration on some general implementation ideas for serving ssr content mainly tryed to improve the Projects: nextjs and stealjs 
 
+The results are in the folders the package.json dependencies get removed via renaming dependencies to deprecatedDependencies so that repo tooling does not touch it anymore all this is not usefull directly anymore. All usefull results got contributed to the right places in the Open Source Community. 
+
+
+
+## deprectaed steal-ssr readme
 This is Forked from harp most and then got improved
 - can be used as Supplyer of Middelware for Routing Request to the steal/steal-steal-ssr layout partial paradigm
 - can be used as StandAlone Server via cli interface offered by binary "steal-ssr"
